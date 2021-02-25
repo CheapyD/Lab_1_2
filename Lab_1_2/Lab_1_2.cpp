@@ -4,6 +4,13 @@
 
 using namespace std;
 
+Stack makeStack()
+{
+	Stack s;
+	s.Init();
+	return s;
+}
+
 int main()
 {
 	SetConsoleCP(1251);
@@ -14,5 +21,12 @@ int main()
 	t.Read();
 	t.Display();
 
-	cout << "Кількість елементів: " << t.Count() << endl;
+	cout << "Кількість елементів до видалення: " << t.Count() << endl;
+
+	t.Pop();
+	t.Display();
+
+	cout << "Кількість елементів після видалення: " << t.Count() << endl;
+
+	makeStack();
 }

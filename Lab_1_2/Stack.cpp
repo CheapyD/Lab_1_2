@@ -6,6 +6,7 @@ using namespace std;
 
 void Stack::Display()
 {
+	cout << endl;
 	Stack::Elem* L = top;
 	while (L != NULL)
 	{
