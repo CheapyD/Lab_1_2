@@ -21,12 +21,13 @@ int main()
 	t.Read();
 	t.Display();
 
-	cout << "Кількість елементів до видалення: " << t.Count() << endl;
+	cout << "Кількість елементів: " << t.Count() << endl;
 
-	t.Pop();
-	t.Display();
-
-	cout << "Кількість елементів після видалення: " << t.Count() << endl;
+	while (!t.Empty())
+	{
+		int i = t.Pop();
+		cout << "Видалений елемент стеку: " << i << endl;
+	}
 
 	makeStack();
 }
